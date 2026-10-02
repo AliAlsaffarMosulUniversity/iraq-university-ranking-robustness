@@ -1,0 +1,5 @@
+ranking,n_listed,n_unlisted,median_iru_listed,median_iru_unlisted,auc,p_one_sided
+THE 2027,23,12,40.1578,21.2777,0.9457,0.0
+SIR 2026,29,6,37.2455,15.7398,0.977,0.0
+THE Impact 2026,14,21,38.4969,27.7495,0.6803,0.0385
+QS 2027,6,29,45.2099,27.7495,0.8506,0.0028

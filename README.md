@@ -55,3 +55,18 @@ the IRU and outside this dataset.
 4. IRU scores are rounded to 4 decimals.
 5. Founding year (a descriptive field in the app) is not included; it was not
    verified for the added institutions and is not used in the analysis.
+
+## Analysis (phase 2)
+
+`python scripts/analysis.py` writes everything under `results/` (seed 20261002, 10,000 weight vectors).
+
+- `rank_correlations.csv`: Spearman and Kendall between national and international rankings, with bootstrap 95% CI.
+- `presence_vs_national_score.csv`: whether the national score separates listed from unlisted institutions.
+- `mc_rank_summary.csv`, `mc_stability_metrics.csv`: Monte Carlo weight sensitivity.
+- `missing_treatment_agreement.csv`: three treatments of "not ranked" (A available case, B penalty, C median).
+- `topsis_vs_weighted_sum.csv`: aggregation method comparison.
+- `figures/`: three figures.
+
+Composite index: nine indicators in five axes (national, global, research, education,
+sustainability); min-max normalisation; equal weights inside an axis; baseline axis
+weights 25/25/25/10/15. `Reporter` is treated as not ranked.

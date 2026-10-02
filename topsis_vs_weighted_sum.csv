@@ -1,0 +1,5 @@
+sample,treatment,spearman_baseline,kendall_baseline,max_abs_shift,n_changed,same_top5,mean_spearman_mc,min_spearman_mc
+35 universities,B,0.9902,0.9429,4.0,15,True,0.9866,0.944
+35 universities,C,0.986,0.9361,7.0,18,True,0.963,0.8378
+37 institutions,B,0.9917,0.9489,4.0,15,True,0.9886,0.9538
+37 institutions,C,0.987,0.9369,7.0,18,True,0.9603,0.7881

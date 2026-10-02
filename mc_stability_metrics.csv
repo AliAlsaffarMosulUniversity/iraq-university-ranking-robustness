@@ -1,0 +1,13 @@
+sample,treatment,weights,mean_spearman_vs_baseline,min_spearman,mean_range90,max_range90,n_distinct_rank1,rank1_leader,rank1_share,share_same_top5
+35 universities,A,uniform,0.9582,0.8448,7.2857,18.0,4,baghdad,0.7963,0.2115
+35 universities,A,local,0.9929,0.9627,2.5143,8.0,2,baghdad,0.9954,0.9079
+35 universities,B,uniform,0.9639,0.8487,6.0286,17.0,4,baghdad,0.6226,0.4364
+35 universities,B,local,0.9942,0.9675,2.2286,9.0,2,baghdad,0.9994,0.5249
+35 universities,C,uniform,0.8844,0.5031,11.5429,24.0,4,baghdad,0.5616,0.4972
+35 universities,C,local,0.9864,0.9132,4.0857,16.0,3,baghdad,0.9992,0.7526
+37 institutions,A,uniform,0.9647,0.8582,7.0541,18.0,3,baghdad,0.7993,0.2095
+37 institutions,A,local,0.9941,0.9704,2.3514,8.0,2,baghdad,0.9969,0.9125
+37 institutions,B,uniform,0.9696,0.88,5.7297,17.0,4,baghdad,0.636,0.4355
+37 institutions,B,local,0.995,0.9758,2.1892,9.0,2,baghdad,0.9991,0.5334
+37 institutions,C,uniform,0.8771,0.4732,12.3243,25.0,4,baghdad,0.5777,0.4966
+37 institutions,C,local,0.9858,0.9047,4.3784,17.0,3,baghdad,0.9989,0.7444
