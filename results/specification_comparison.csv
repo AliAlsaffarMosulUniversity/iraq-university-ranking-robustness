@@ -1,0 +1,6 @@
+spec,rho_with_main,max_shift_vs_main,mean_rho_global,mean_w90_global,max_w90_global,top5_kept_global,top5_kept_local,top5
+S1 main,1.0,0.0,0.9678,6.0571,16.0,0.5492,0.7778,baghdad must tech anbar nahrain
+S2 + SIR overall,0.9975,3.0,0.9714,5.8571,16.0,0.3943,0.4961,baghdad must tech anbar mosul
+S3 THE band,0.9966,2.0,0.9672,6.2,16.0,0.5186,0.6578,baghdad tech must anbar nahrain
+S4 tool weights,0.993,4.0,0.9664,6.0571,16.0,0.5492,0.913,baghdad tech anbar must nahrain
+S5 original (v1),0.9762,10.0,0.9639,6.0286,17.0,0.4364,0.5249,baghdad tech must anbar nahrain

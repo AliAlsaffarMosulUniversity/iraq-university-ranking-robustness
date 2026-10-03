@@ -1,7 +1,4 @@
-sample,pair,spearman,kendall,max_abs_shift,mean_abs_shift
-35 universities,A-B,0.9891,0.9328,4.0,1.0857
-35 universities,A-C,0.9768,0.8992,7.0,1.5429
-35 universities,B-C,0.9546,0.8521,8.0,2.1714
-37 institutions,A-B,0.9908,0.9399,4.0,1.027
-37 institutions,A-C,0.9692,0.8889,9.0,1.8378
-37 institutions,B-C,0.9483,0.8468,10.0,2.4324
+pair,spearman,kendall,mean_abs_shift,max_abs_shift
+A-B,0.9697,0.8958,1.6,10.0
+A-C,0.9367,0.8185,2.6857,9.0
+B-C,0.8689,0.7613,3.6,11.0

@@ -1,34 +1,29 @@
 {
  "seed": 20261002,
  "n_sim": 10000,
+ "sir_redundancy": {
+  "sir~sir_res": 0.847,
+  "sir~sir_inn": 0.151,
+  "sir~sir_soc": 0.876
+ },
  "national_vs_international_composite": {
   "A": {
    "n": 29,
-   "spearman": 0.7025,
-   "p": 2.1562010935532995e-05
+   "rho": 0.664
   },
   "B": {
    "n": 35,
-   "spearman": 0.8336,
-   "p": 5.10920613235678e-10
+   "rho": 0.822
   },
   "C": {
    "n": 35,
-   "spearman": 0.532,
-   "p": 0.0010051923982688212
+   "rho": 0.417
   }
  },
  "national_2024_vs_2025": {
-  "spearman": 0.9317,
+  "spearman": 0.932,
   "kendall": 0.795,
   "mean_abs_shift": 3.06,
-  "max_abs_shift": 8,
-  "biggest_movers": {
-   "kufa": -8,
-   "basrah": 7,
-   "mosul": 6,
-   "muthanna": -6,
-   "karkh": 6
-  }
+  "max_abs_shift": 8
  }
 }
