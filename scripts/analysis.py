@@ -167,8 +167,15 @@ intl = {}
 for how in "ABC":
     A = axis_scores(treat(N0, how))[AXES[1:]].to_numpy(); c = wsum(A, np.full((1, 4), .25))[0]; ok = ~np.isnan(c)
     intl[how] = dict(n=int(ok.sum()), rho=round(rho(df.loc[unis35, "iru2025_score"].to_numpy()[ok], c[ok]), 3))
+# --- leave-one-out stability of the agreement coefficients (the universities are a census, not a sample)
+loo = {}
+for b in ("THE 2027 (rebuilt score)", "SIR overall", "THE Impact 2026"):
+    xx, yy = series["IRU 2025"].loc[unis35], series[b].loc[unis35]; mm = xx.notna() & yy.notna(); ids = list(xx[mm].index)
+    v = [rho(xx[mm].drop(u), yy[mm].drop(u)) for u in ids]
+    loo[b] = dict(n=len(ids), full=round(rho(xx[mm], yy[mm]), 3), min=round(min(v), 3), max=round(max(v), 3),
+                  most_influential=ids[int(np.argmax(np.abs(np.array(v) - rho(xx[mm], yy[mm]))))])
 x, y = df.loc[unis35, "iru2024_rank"], df.loc[unis35, "iru2025_rank"]
-(OUT/"summary.json").write_text(json.dumps(dict(seed=SEED, n_sim=N_SIM, sir_redundancy=red, national_vs_international_composite=intl,
+(OUT/"summary.json").write_text(json.dumps(dict(seed=SEED, n_sim=N_SIM, sir_redundancy=red, leave_one_out=loo, national_vs_international_composite=intl,
     national_2024_vs_2025=dict(spearman=round(rho(x, y), 3), kendall=round(float(stats.kendalltau(x, y)[0]), 3),
                                mean_abs_shift=round(float((x-y).abs().mean()), 2), max_abs_shift=int((x-y).abs().max()))), indent=1))
 
