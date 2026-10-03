@@ -6,6 +6,29 @@
   "sir~sir_inn": 0.151,
   "sir~sir_soc": 0.876
  },
+ "leave_one_out": {
+  "THE 2027 (rebuilt score)": {
+   "n": 23,
+   "full": 0.172,
+   "min": 0.056,
+   "max": 0.277,
+   "most_influential": "tech"
+  },
+  "SIR overall": {
+   "n": 29,
+   "full": 0.765,
+   "min": 0.738,
+   "max": 0.809,
+   "most_influential": "uoitc"
+  },
+  "THE Impact 2026": {
+   "n": 14,
+   "full": 0.524,
+   "min": 0.455,
+   "max": 0.726,
+   "most_influential": "tech"
+  }
+ },
  "national_vs_international_composite": {
   "A": {
    "n": 29,
